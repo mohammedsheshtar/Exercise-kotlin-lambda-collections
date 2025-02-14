@@ -9,6 +9,13 @@ fun main() {
     val names = mutableListOf<String>("Alice", "Bob", "Amir", "Charlie", "Annie", "David");
     println("[*] ${filterNames(names) { it.contains("A" )}}");
 
+    // part 3
+    println("\nPart 3");
+    val fruits = listOf<String>("apple", "banana", "kiwi", "strawberry", "grape");
+    println("[*] ${fruits.sortedByDescending { it.length }}")
+
+
+
 }
 
 fun filterNames( names: MutableList<String>, filter: (String) -> Boolean ): List<String>{
